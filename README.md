@@ -2,6 +2,24 @@
 small project to show pipeline structure and analyse variants of SARS-CoV2
 
 ---
+## Folder Structure
+.
+├── config.yaml
+├── env.yml
+├── README.md
+├── run_pipeline.py
+└── scripts
+    ├── helper_scripts
+    │   └── run_suprocess.py
+    └── main_scripts
+        ├── alignment.py
+        ├── analysis.py
+        ├── download_data.py
+        ├── quality_control.py
+        ├── trimming.py
+        └── variant_calling.py
+
+--
 
 ## Pipeline discription
 ### 1. creates environment
