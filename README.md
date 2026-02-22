@@ -3,6 +3,8 @@ small project to show pipeline structure and analyse variants of SARS-CoV2
 
 ---
 ## Folder Structure
+
+```shell
 .
 ├── config.yaml
 ├── env.yml
@@ -18,7 +20,7 @@ small project to show pipeline structure and analyse variants of SARS-CoV2
         ├── quality_control.py
         ├── trimming.py
         └── variant_calling.py
-
+```
 --
 
 ## Pipeline discription
