@@ -1,0 +1,31 @@
+therads: 4
+
+ena_download:
+  ena_read1: ftp://ftp.sra.ebi.ac.uk/vol1/fastq/SRR239/084/SRR23971484/SRR23971484_1.fastq.gz
+  ena_read2: ftp://ftp.sra.ebi.ac.uk/vol1/fastq/SRR239/084/SRR23971484/SRR23971484_2.fastq.gz
+
+ncbi_download: https://eutils.ncbi.nlm.nih.gov/entrez/eutils/efetch.fcgi?db=nuccore&id=NC_045512.2&rettype=fasta&retmode=text
+
+variant_filters:
+  min_depth: 20
+  min_quality: 25
+
+genes:
+  spike:
+    start: 21563
+    end: 25384
+
+output_folder:
+  raw_read1: data/input/raw_read1
+  raw_read2: data/input/raw_read2
+
+  trim_out: data/results/trim_output_fastp
+  trim_read1: data/results/trim_output/trim_read1
+  trim_read2: data/results/trim_output/trim_read2
+  qc_output: data/results/qc_output
+  ncbi_data: data/reference
+  aligned_output: data/results/aligend_output
+  variant_output: data/results/variant_output
+  filt_variants: data/results/filt_variants_output
+
+
